@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+[class*="col-"] {
+	float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/* header */
+header div {
+	display: flex;
+	justify-content: flex-end;
+}
+header > div > ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+header div ul li {
+	margin: 10px;
+	display: inline-block;
+}
+header > div > ul > li > a {
+	line-height: 50px;
+	padding: 5px 20px;
+	display: block;
+	color: #e7ba00;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+header > div > ul > li > a:hover {
+	color: #3a579d;
+}
+
+/* jumbotron */
+.jumbotron {
+	background-image: url("http://www.travelwiz.ro/images/tari/16/calauza-sami_692.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 768px;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+}
+.jumbotron h1 {
+	color: #e7ba00;
+	font-size: 48px;
+	font-weight: 700;
+} 
+
+/*gallery */
+.gallery .row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+} 
+.gallery img {
+	margin: 20px;
+	border-radius: 5%;
+} 
+
+/* cards */
+.cards .row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content:center;
+}
+.cards div {
+	min-width: 200px;
+	margin: 0 20px;;
+}
+.cards h2 {
+	flex: 2;
+	color: #e7ba00;
+}
+.cards p {
+	flex: 6;
+	color: #3a579d;
+}	
+.element {
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+}
+
+/* footer */
+footer {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #47b7e0;
+    padding: 10px;
+}
+
+footer .row {
+	display: flex;
+}
+footer div {
+    flex-grow: 1;
+}
+.company-name {
+    flex-grow: 2;
+}
+footer p, 
+footer h2 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
