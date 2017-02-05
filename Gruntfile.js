@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             files: [{
                 expand: true,
                 cwd: 'images/',
-                src: ['**/*.{png,jpg,gif}'],
+                src: ['**/*.{png,jpg,jpeg,gif}'],
                 dest: 'images/build/'
             }]
         }
@@ -36,18 +36,21 @@ module.exports = function(grunt) {
     },
       
     browserSync: {
-        dev: {
-            bsFiles: {
-                src : [
-                    'app/css/*.css',
-                    'app/*.html'
-                ]
-            },
-            options: {
-                watchTask: true,                    server: './app'
-            }
-        }
+        bsFiles: {
+            src : [
+                'css/*.css',
+                '*.html'
+            ]
+        },
+        options: {
+            watchTask: true,
+            server: {
+            baseDir: "./"
+	       }
+	   }
     }
+  
+  
   });
     
     
