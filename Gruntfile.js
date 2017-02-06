@@ -30,8 +30,8 @@ module.exports = function(grunt) {
             files: ['sass/*.sass'],
             tasks: ['sass'],
             options: {
-                spawn: false,
-            },
+                spawn: false
+            }
         } 
     },
       
@@ -45,12 +45,10 @@ module.exports = function(grunt) {
         options: {
             watchTask: true,
             server: {
-            baseDir: "./"
-	       }
+                baseDir: "./"
+	        }
 	   }
     }
-  
-  
   });
     
     
@@ -62,6 +60,6 @@ module.exports = function(grunt) {
   // Default task(s).
     
     
-  grunt.registerTask('default', ['sass', 'imagemin','watch','browserSync']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch']);
 };
   
